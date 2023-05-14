@@ -7,12 +7,13 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PetsLife</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styleDonaciones.css">
 
 </head>
 <style>
@@ -57,20 +58,61 @@
 
 <section>
     <div class ="ful-img" id="fulImgBox">
-        <img src="img/Logo_eslogan_sinfondo.png" id="fulImg" alt="">
+        <!-- <img src="img/LOGO_ORGANIZACION2.jpg" id="fulImg" alt=""> -->
         <span onclick ="closeImg()">x</span>
     </div>
+
     <h1><span>ORGANIZACIONES</span></h1>
     <div class="img-gallery">
-    <img src="img/Logo_eslogan_sinfondo.png" onclick="openfulImg(this.src)"  alt="">
-    <img src="img/Logo_eslogan_sinfondo.png" onclick="openfulImg(this.src)"  alt="">
-    <img src="img/Logo_eslogan_sinfondo.png" onclick="openfulImg(this.src)"  alt="">
-    <img src="img/Logo_eslogan_sinfondo.png" onclick="openfulImg(this.src)"  alt="">
+    <img src="img/LOGO_ORGANIZACION2.jpg" onclick="openfulImg(this.src)"  alt="">
+    <img src="img/LOGO_ORGANIZACION1.jpg" onclick="openfulImg(this.src)"  alt="">
+    <img src="img/LOGO-ORGANIZACION3.jpg" onclick="openfulImg(this.src)"  alt="">
+    <img src="img/LOGO_ORGANIZACION4.jpg" onclick="openfulImg(this.src)"  alt="">
     </div>
+    <div class="modal-content" id="model">
+        <div class="modal-header">
+            <span onclick="closeImg()" class="close">&times;</span>
+            <h2>Modal Header</h2>
+        </div>
+        <div class="modal-body">
+        <img src="img/LOGO_ORGANIZACION2.jpg" id="fulImg" alt="">
+            <p>Some text in the Modal Body</p>
+            <p>Some other text...</p>
+        </div>
+        <div class="modal-footer">
+            <h3>Modal Footer</h3>
+        </div>
+    </div>
+
+
   </section>
 
   <section>
     
+<!--
+!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Modal Header</h2>
+    </div>
+    <div class="modal-body">
+      <p>Some text in the Modal Body</p>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
+</div> -->
+
   </section>
 
 
@@ -83,30 +125,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
         integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
         crossorigin="anonymous"></script>
-<script crossorigin="anonymous" src="https://kit.fontawesome.com/f92816fa7c.js"></script>
-        <script>
-            // Get the modal
-            var modal = document.getElementById("myModal");
-            
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg");
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            img.onclick = function(){
-              modal.style.display = "block";
-              modalImg.src = this.src;
-              captionText.innerHTML = this.alt;
-            }
-            
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-            
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() { 
-              modal.style.display = "none";
-            }
-            </script>
-            <script src="js/Donacion.js"></script>
+            <script src="Donacion.js"></script>
 </body>
 
 </html>
