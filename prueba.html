@@ -175,11 +175,29 @@
     function abrir(reference) {
       modal.style.display = "flex";
       modalImage.src = reference;
+
+      localStorage.setItem("modalVisible", "true");
     }
 
     function cerrar() {
       modal.style.display = "none";
     }
+
+    function cerrarModal() {
+      modal.style.display = "none";
+
+      // Al cerrar el modal, eliminar el estado del almacenamiento local
+      localStorage.removeItem("modalVisible");
+    }
+
+    window.onload = function() {
+      var modalVisible = localStorage.getItem("modalVisible");
+      if (modalVisible) {
+        modal.style.display = "flex";
+      } else {
+        modal.style.display = "none";
+      }
+    };
 
     window.onclick = function(event) {
       if (event.target == modal) {
