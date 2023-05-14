@@ -148,12 +148,6 @@
     scale: 1.1;
 }
 
-#container-5 img {
-    height: 300px;
-    width: 250px;
-    border-radius: 5%;
-}
-
 .galeria {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -189,8 +183,8 @@
 }
 
 .code-container {
-    margin: 40px auto; /* ajusta el margen superior e inferior */
-    max-height: calc(90vh - 250px); /* establece una altura máxima */
+    margin: 40px auto; 
+    max-height: calc(90vh - 250px); 
     overflow-y: auto;
 }
 

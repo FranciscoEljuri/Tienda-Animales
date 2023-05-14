@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="styleDonaciones.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 <style>
     body {
@@ -109,54 +109,49 @@
 
     <section class="donaciones">
         <div class="container my-5">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2>¡Ayuda a nuestros perritos!</h2>
-                    <p>Tu contribución nos ayuda a seguir rescatando y cuidando de perritos que han sido abandonados o
-                        maltratados. Cualquier donación, por pequeña que sea, es bienvenida y muy apreciada.</p>
-                    <p>Puedes realizar una donación única o convertirte en un donante recurrente. Además, ofrecemos
-                        diferentes opciones para hacer tu donación:</p>
-                    <ul>
-                        <li><strong>Donación en línea:</strong> Utiliza nuestro sitio web seguro para hacer tu donación
-                            con una tarjeta de crédito o débito.
-                        </li>
-                        <li><strong>Donación por cheque:</strong> Envíanos un cheque por correo postal a nuestra
-                            dirección.
-                        </li>
-                        <li><strong>Donación en persona:</strong> Visítanos en nuestra ubicación para hacer tu donación
-                            en persona.
-                        </li>
-                    </ul>
-                    <a href="#" class="btn btn-primary">Hacer una donación</a>
-                </div>
-                <div class="col-lg-6">
-                    <img src="img/Nosotros2.jpeg" alt="Perritos necesitados">
-                </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <h2>¡Ayuda a nuestros perritos!</h2>
+              <p>Tu contribución nos ayuda a seguir rescatando y cuidando de perritos que han sido abandonados o maltratados. Cualquier donación, por pequeña que sea, es bienvenida y muy apreciada.</p>
+              <p>Puedes realizar una donación única o convertirte en un donante recurrente. Además, ofrecemos diferentes opciones para hacer tu donación:</p>
+              <ul>
+                <li><strong>Donación en línea:</strong> Utiliza nuestro sitio web seguro para hacer tu donación con una tarjeta de crédito o débito.</li>
+                <li><strong>Donación por cheque:</strong> Envíanos un cheque por correo postal a nuestra dirección.</li>
+                <li><strong>Donación en persona:</strong> Visítanos en nuestra ubicación para hacer tu donación en persona.</li>
+              </ul>
+              <a href="#" class="btn btn-primary">Hacer una donación</a>
             </div>
+            <div class="col-lg-6">
+              <img src="img/Nosotros2.jpeg" alt="Perritos necesitados" class="img-fluid">
+            </div>
+          </div>
         </div>
+        
     </section>
 
     <section>
         <h1><span>FUNDACIONES</span></h1>
         <div class="img-gallery">
-            <img src="img/LOGO_ORGANIZACION2.jpg" onclick="abrir(this.src, 'image1')" alt="">
-            <img src="img/LOGO_ORGANIZACION1.jpg" onclick="abrir(this.src, 'image2')" alt="">
-            <img src="img/LOGO-ORGANIZACION3.jpg" onclick="abrir(this.src, 'image3')" alt="">
-            <img src="img/LOGO_ORGANIZACION4.jpg" onclick="abrir(this.src, 'image4')" alt="">
+            <img src="img/LOGO_ORGANIZACION2.jpg" onclick="abrir(this.src, 'image1','nombrefundacion1')" alt="">
+            <img src="img/LOGO_ORGANIZACION1.jpg" onclick="abrir(this.src, 'image2','nombrefundacion2')" alt="">
+            <img src="img/LOGO-ORGANIZACION3.jpg" onclick="abrir(this.src, 'image3','nombrefundacion3')" alt="">
+            <img src="img/LOGO_ORGANIZACION4.jpg" onclick="abrir(this.src, 'image4','nombrefundacion4')" alt="">
         </div>
 
         <div id="myModal" class="modal">
             <div class="modal-content" id="contenido">
                 <div class="modal-header">
                     <span class="close" onclick="cerrar()">&times;</span>
-                    <h2>Modal Header</h2>
+                    <h2 id="NombreOrganizacion"></h2>
                 </div>
                 <div class="modal-body">
                     <img id="modalImage" src="" alt="">
                     <p id="textoModal"></p>
                 </div>
                 <div class="modal-footer">
-                    <h3>Modal Footer</h3>
+                    <a class="enlace" href="https://fundacionarca.cl/nosotros/historia/">Para mas informacion visitanos haga click</a>
+
+
                 </div>
             </div>
         </div>
@@ -253,6 +248,7 @@
         integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
         crossorigin="anonymous"></script>
     <script src="Donacion.js"></script>
+    
 </body>
 
 </html>

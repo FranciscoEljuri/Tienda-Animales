@@ -27,22 +27,22 @@ section{
   }
   
   section h1::before {
-    right: 70%; /* Posicionamiento a la izquierda del título */
+    right: 70%; 
   }
   
   section h1::after {
-    left: 70%; /* Posicionamiento a la derecha del título */
+    left: 70%; 
   }
   
   section h1:hover::before,
   section h1:hover::after {
-    width: calc(50% - 10px); /* Ancho aumentado de las líneas al pasar el cursor */
+    width: calc(50% - 10px);
   }
   
   @media screen and (max-width: 768px) {
     section h1 {
-      width: 90%; /* Ajustar el ancho del título en dispositivos más pequeños */
-      font-size: 28px; /* Ajustar el tamaño de fuente del título en dispositivos más pequeños */
+      width: 70%; 
+      font-size: 18px; 
     }
     
     section h1::before,
@@ -128,6 +128,10 @@ animation-duration: 0.4s
     padding: 2px 16px;
     background-color: #88a4c4;
     color: white;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+
   }
 
   .modal-body {
@@ -167,5 +171,14 @@ animation-duration: 0.4s
 
   .img-gallery img:hover {
     transform: scale(1.2);
+  }
+
+  .enlace {
+    color: rgb(255, 255, 255); /* Modifica el color del enlace aquí */
+    text-decoration: none; /* Elimina la decoración de subrayado */
+  }
+  
+  .enlace:hover {
+    color: blue; /* Modifica el color del enlace al pasar el cursor por encima */
   }
   
