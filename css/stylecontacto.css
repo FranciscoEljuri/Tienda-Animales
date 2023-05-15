@@ -14,13 +14,15 @@
     margin: 2rem 3rem;
     padding: 0;
     max-height: 800px;
+
 }
 
 #contenedor_form #form_contacto{
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 100%;
     gap: 1rem;
     justify-content: center;
+    justify-items: center;
 }
 
 /*CSS DE CAMPOS DE DATOS*/
