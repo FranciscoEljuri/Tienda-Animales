@@ -189,8 +189,8 @@
 }
 
 .code-container {
-    margin: 40px auto;
-    max-height: calc(90vh - 250px);
+    margin: 40px auto; /* ajusta el margen superior e inferior */
+    max-height: calc(90vh - 250px); /* establece una altura máxima */
     overflow-y: auto;
 }
 
@@ -209,7 +209,7 @@ h1::before{content: "";
     width: 100%;
     height: 2px;
     position: absolute;
-    background-color: black;
+
     top: 50%;
     z-index: -1;
 }
@@ -236,8 +236,10 @@ h1 span{
 
 }
 .ful-img{
+    width: 100%;
     height: 100vh;
     background-color: rgba(0,0,0,0.9);
+    position: fixed;
     top: 0;
     left: 0;
     display: none;
@@ -269,7 +271,7 @@ h1 span{
     max-width: 600px;
 }
 
-@media screen and(max-widht:400px) {
+@media screen and(max-width:400px) {
     h1{
         text-decoration: underline;
     }
@@ -277,9 +279,35 @@ h1 span{
         display: none;
     }
     h1 span{
-        padding: o;
+        padding: 1px;
     }
 }
+.code-container {
+    margin: 40px auto; /* ajusta el margen superior e inferior */
+    max-height: calc(90vh - 250px); /* establece una altura máxima */
+    overflow-y: auto;
+}
+
+.nosotros {
+    margin: auto auto;
+}
+
+#tituloNosotros {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#card1, #card2, #card3, #card4, #card5 {
+    display: inline-block;
+    width: 18%;
+    margin-right: 1%;
+    vertical-align: top;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
 
   /* Modal Content */
   .modal-content {
@@ -295,18 +323,18 @@ h1 span{
     animation-name: animatetop;
     animation-duration: 0.4s
   }
-  
+
   /* Add Animation */
   @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
+    from {top:-300px; opacity:0}
     to {top:0; opacity:1}
   }
-  
+
   @keyframes animatetop {
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
   }
-  
+
   /* The Close Button */
   .close {
     color: white;
@@ -314,28 +342,28 @@ h1 span{
     font-size: 28px;
     font-weight: bold;
   }
-  
+
   .close:hover,
   .close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
   }
-  
+
   .modal-header {
     padding: 2px 16px;
     background-color: #88a4c4 ;
     color: white;
   }
-  
+
   .modal-body {padding: 2px 16px;}
-  
+
   .modal-footer {
     padding: 2px 16px;
     background-color: #88a4c4 ;
     color: white;
   }
-  
+
   .modal-body img{
     width: 50%;
     height: 80%;
@@ -343,3 +371,36 @@ h1 span{
     align-items: center;
     text-align: center;
   }
+
+  .card:last-child {
+    margin-right: 0;
+  }
+
+  .card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .card p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+
+  .card-img-top {
+    width: 10%;
+  }
+
+  #tituloNosotros {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#Perritos-necesitados {
+    width: 90%;
+    height: 90%;
+
+}
+
+#tituloEquipo {
+    text-align: center;
+}
